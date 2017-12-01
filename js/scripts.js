@@ -1,3 +1,10 @@
+var makeVisible = function() {
+  $(".courses a").hide();
+  $(".courses").show();
+  $(".results").show();
+  $(".intro").show("slow");
+}
+
 $(document).ready(function() {
   $("#trackQuestions").submit(function(event) {
     event.preventDefault();
@@ -12,13 +19,20 @@ $(document).ready(function() {
 
     if (q5Input === 5) {
       $("#output").text("Hello " + nameInput + ", it is highly recommended that you take the PHP/Drupal course from Epicodus. Based on your response, taking this course will allow you to focus on backend coding.");
-      $(".phpdrupal").removeClass("grayscale")
+      makeVisible();
+      $(".phpdrupal").show("slow");
     } else if (combinedInput <= 14) {
       $("#output").text("Hello " + nameInput + ", It is recommended that you take the CSS/Design course from Epicodus. Based on your response, taking this course will allow you to focus on developing for a web interface.");
+      makeVisible();
+      $(".cssdesign").show("slow");
     } else if (combinedInput >= 16) {
       $("#output").text("Hello " + nameInput + ", It is recommended that you take the Java/Android course from Epicodus. Based on your response, taking this course will allow you to focus on developing for a mobile interface.");
+      makeVisible();
+      $(".javaandroid").show("slow");
     } else if (combinedInput === 15) {
       $("#output").text("Hello " + nameInput + ", You seem to not seem to have a particular interest in either mobile development or desktop development. May we suggest the PHP/Drupal course from Epicodus.");
+      makeVisible();
+      $(".phpdrupal").show("slow");
     } else {
       console.log("Reached end of branch, check for possible errors.")
     }

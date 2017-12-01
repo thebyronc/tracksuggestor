@@ -10,9 +10,9 @@
   </head>
   <body>
     <div class="container" id="trackSuggstor">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Track Suggestor</h2>
+      <h2>TRACK SUGGESTOR</h2>
+      <div class="row" id="formandresult">
+        <div class="col-md-8">
           <p>This questionair will help determine what course you should take at Epicodus.</p>
           <form id="trackQuestions">
             <div class="form-group">
@@ -117,7 +117,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>During Black Friday, you are most excited about the possible discounts for cell phones:</th>
+                    <th>During Black Friday, you are most excited about the discounts for cell phones:</th>
                     <td>
                       <label class="radio-inline">
                         <input type="radio" name="question4" value="5">
@@ -145,7 +145,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>If you are to code something with a team, you absulotely love the idea of never having to deal with front end or design work:</th>
+                    <th>You absulotely love the idea of never having to deal with front end or design work:</th>
                     <td>
                       <label class="radio-inline">
                         <input type="radio" name="question5" value="1">
@@ -175,21 +175,22 @@
                 </tbody>
               </table>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-custred">Submit</button>
           </form>
         </div><!-- end col-md-6 -->
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="courses">
-            <h4>Languages and Technologies offered at Epicodus:</h4>
-            <a href="https://www.learnhowtoprogram.com/css" target="_blank"><img src="img/css.png" alt="CSS Badge" class="cssdesign grayscale"></a>
-            <a href="https://www.learnhowtoprogram.com/css" target="_blank"><img src="img/html.png" alt="HTML Badge" class="cssdesign grayscale"></a>
-            <a href="https://www.learnhowtoprogram.com/java" target="_blank"><img src="img/android.png" alt="Android Robot" class="javaandroid grayscale"></a>
-            <a href="https://www.learnhowtoprogram.com/android" target="_blank"><img src="img/java.png" alt="Java Logo" class="javaandroid grayscale"></a>
-            <a href="https://www.learnhowtoprogram.com/php" target="_blank">  <img src="img/php.png" alt="PHP Logo" class="phpdrupal grayscale"></a>
-            <a href="https://www.learnhowtoprogram.com/drupal" target="_blank"><img src="img/drupal.png" alt="Drupal Logo" class="phpdrupal grayscale"></a>
+            <h4>Languages and Technologies offered at Epicodus:</h5>
+            <a href="https://www.learnhowtoprogram.com/intro-to-programming" target="_blank" class="intro"><img src="img/intro.png" alt="Intro" class="cssdesign grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/css" target="_blank" class="cssdesign"><img src="img/css.png" alt="CSS Badge" class="grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/css" target="_blank" class="cssdesign"><img src="img/html.png" alt="HTML Badge" class="grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/java" target="_blank" class="javaandroid"><img src="img/android.png" alt="Android Robot" class="grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/android" target="_blank" class="javaandroid"><img src="img/java.png" alt="Java Logo" class="grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/php" target="_blank" class="phpdrupal">  <img src="img/php.png" alt="PHP Logo" class="grayscale"></a>
+            <a href="https://www.learnhowtoprogram.com/drupal" target="_blank" class="phpdrupal"><img src="img/drupal.png" alt="Drupal Logo" class="grayscale"></a>
           </div>
           <div class="results">
-            <h3>Here are your results:</h3>
+            <h4>Your personal recommendation:</h5>
             <p id="output"></p>
           </div>
         </div><!-- end col-md-6 -->
