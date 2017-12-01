@@ -12,6 +12,7 @@ $(document).ready(function() {
 
     if (q5Input === 5) {
       $("#output").text("Hello " + nameInput + ", it is highly recommended that you take the PHP/Drupal course from Epicodus. Based on your response, taking this course will allow you to focus on backend coding.");
+      $(".phpdrupal").removeClass("grayscale")
     } else if (combinedInput <= 14) {
       $("#output").text("Hello " + nameInput + ", It is recommended that you take the CSS/Design course from Epicodus. Based on your response, taking this course will allow you to focus on developing for a web interface.");
     } else if (combinedInput >= 16) {

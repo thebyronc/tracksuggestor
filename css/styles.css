@@ -1,8 +1,5 @@
 body {
 
-  /*background-image: url("../img/bgimg.png");
-  background-size: 100%;
-  background-repeat: no-repeat;*/
 }
 .questions th {
     text-align: center;
@@ -19,13 +16,15 @@ body {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
+.grayscale:hover {
+  -webkit-filter: none;
+  filter: none;
 }
-img {
-    margin: 0 3px;
-    float: left;
+.courses img {
+    margin: 3px;
     width: 75px;
     height: 75px;
+}
+.results {
+  height: 150px;
 }
