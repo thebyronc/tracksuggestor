@@ -1,6 +1,3 @@
-body {
-
-}
 .questions th {
     text-align: center;
 }
@@ -43,4 +40,12 @@ body {
   color: #FFFFFF;
   background-color: #FF5474;
   border-color: #B82834;
+}
+#coursetracker {
+  color: #F23545;
+  font-weight: bolder;
+  border-bottom: 1px solid #F23545;
+}
+.pinkborder {
+  border-right: 1px solid #cccccc;
 }

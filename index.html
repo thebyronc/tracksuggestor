@@ -10,14 +10,14 @@
   </head>
   <body>
     <div class="container" id="trackSuggstor">
-      <h2>TRACK SUGGESTOR</h2>
+      <h2 id="coursetracker">TRACK SUGGESTOR</h2>
       <div class="row" id="formandresult">
-        <div class="col-md-8">
-          <p>This questionair will help determine what course you should take at Epicodus.</p>
+        <div class="col-md-8 pinkborder">
+          <p>This questionaire will help determine what course you should take at Epicodus.</p>
           <form id="trackQuestions">
             <div class="form-group">
               <label for="name">Please enter your name:</label>
-              <input id="name" class="form-control" type="text">
+              <input id="name" class="form-control" type="text" required>
             </div>
             <div class="form-group">
               <table class="table table-hover questions">
@@ -46,7 +46,7 @@
                     </td>
                     <td>
                       <label class="radio-inline">
-                        <input type="radio" name="question1" value="3">
+                        <input type="radio" name="question1" value="3" checked>
                       </label>
                     </td>
                     <td>
@@ -74,7 +74,7 @@
                     </td>
                     <td>
                       <label class="radio-inline">
-                        <input type="radio" name="question2" value="3">
+                        <input type="radio" name="question2" value="3" checked>
                       </label>
                     </td>
                     <td>
@@ -89,7 +89,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <th>You've spent more money on a laptop or desktop computer than you have on mobile devices:</th>
+                    <th>You've spent more money on a computer than you have on mobile devices:</th>
                     <td>
                       <label class="radio-inline">
                         <input type="radio" name="question3" value="1">
@@ -102,7 +102,7 @@
                     </td>
                     <td>
                       <label class="radio-inline">
-                        <input type="radio" name="question3" value="3">
+                        <input type="radio" name="question3" value="3" checked>
                       </label>
                     </td>
                     <td>
@@ -130,7 +130,7 @@
                     </td>
                     <td>
                       <label class="radio-inline">
-                        <input type="radio" name="question4" value="3">
+                        <input type="radio" name="question4" value="3" checked>
                       </label>
                     </td>
                     <td>
@@ -158,7 +158,7 @@
                     </td>
                     <td>
                       <label class="radio-inline">
-                        <input type="radio" name="question5" value="3">
+                        <input type="radio" name="question5" value="3" checked>
                       </label>
                     </td>
                     <td>
@@ -179,6 +179,10 @@
           </form>
         </div><!-- end col-md-6 -->
         <div class="col-md-4">
+          <div class="results">
+            <h4>Your personal recommendation: <span id="couresrec"></span></h5>
+            <p id="output"></p>
+          </div>
           <div class="courses">
             <h4>Languages and Technologies offered at Epicodus:</h5>
             <a href="https://www.learnhowtoprogram.com/intro-to-programming" target="_blank" class="intro"><img src="img/intro.png" alt="Intro" class="cssdesign grayscale"></a>
@@ -188,10 +192,6 @@
             <a href="https://www.learnhowtoprogram.com/android" target="_blank" class="javaandroid"><img src="img/java.png" alt="Java Logo" class="grayscale"></a>
             <a href="https://www.learnhowtoprogram.com/php" target="_blank" class="phpdrupal">  <img src="img/php.png" alt="PHP Logo" class="grayscale"></a>
             <a href="https://www.learnhowtoprogram.com/drupal" target="_blank" class="phpdrupal"><img src="img/drupal.png" alt="Drupal Logo" class="grayscale"></a>
-          </div>
-          <div class="results">
-            <h4>Your personal recommendation:</h5>
-            <p id="output"></p>
           </div>
         </div><!-- end col-md-6 -->
       </div><!-- end row -->

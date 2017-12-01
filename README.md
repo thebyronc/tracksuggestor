@@ -12,7 +12,7 @@ This web document is initially designed for the week 2 Epicodus course project. 
 No installation required beyond cloning the repository and viewing the source documents.
 
 ## Known Bugs
-
+ - Clicking outside the radio button will not select it, even though it feels like it will due to the hover effects.
 
 
 ## Support and contact details

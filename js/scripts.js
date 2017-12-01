@@ -1,8 +1,8 @@
 var makeVisible = function() {
   $(".courses a").hide();
-  $(".courses").show();
-  $(".results").show();
-  $(".intro").show("slow");
+  $(".courses").fadeIn();
+  $(".results").fadeIn();
+  $(".intro").fadeIn();
 }
 
 $(document).ready(function() {
@@ -20,27 +20,25 @@ $(document).ready(function() {
     if (q5Input === 5) {
       $("#output").text("Hello " + nameInput + ", it is highly recommended that you take the PHP/Drupal course from Epicodus. Based on your response, taking this course will allow you to focus on backend coding.");
       makeVisible();
-      $(".phpdrupal").show("slow");
+      $("#couresrec").text("PHP/Drupal");
+      $(".phpdrupal").fadeIn();
     } else if (combinedInput <= 14) {
       $("#output").text("Hello " + nameInput + ", It is recommended that you take the CSS/Design course from Epicodus. Based on your response, taking this course will allow you to focus on developing for a web interface.");
+      $("#couresrec").text("CSS/Design");
       makeVisible();
-      $(".cssdesign").show("slow");
+      $(".cssdesign").fadeIn();
     } else if (combinedInput >= 16) {
       $("#output").text("Hello " + nameInput + ", It is recommended that you take the Java/Android course from Epicodus. Based on your response, taking this course will allow you to focus on developing for a mobile interface.");
+      $("#couresrec").text("Java/Android");
       makeVisible();
-      $(".javaandroid").show("slow");
+      $(".javaandroid").fadeIn();
     } else if (combinedInput === 15) {
       $("#output").text("Hello " + nameInput + ", You seem to not seem to have a particular interest in either mobile development or desktop development. May we suggest the PHP/Drupal course from Epicodus.");
+      $("#couresrect").text("PHP/Drupal");
       makeVisible();
-      $(".phpdrupal").show("slow");
+      $(".phpdrupal").fadeIn();
     } else {
       console.log("Reached end of branch, check for possible errors.")
     }
   });
 });
-
-// 5-14 = class
-// 16-25 = java
-// PHP/Drupal
-// Java/Android
-// CSS/Design
