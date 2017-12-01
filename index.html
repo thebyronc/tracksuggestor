@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" type="text/css" rel="stylsheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Track Suggestor</title>
   </head>
   <body>
-    <div class="wrapper" id="trackSuggstor">
-      
+    <div class="container" id="trackSuggstor">
+      <h2>Track Suggestor</h2>
+      <p>This questionair will help determine what course you should take at Epicodus.</p>
+      <form id="trackQuestions">
+        <div class="form-group">
+          <label for="nameInput">Please enter your name:</label>
+          <input id="nameInput" class="form-control" type="text" required></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</div>
+      </form>
     </div><!-- end trackSuggestor -->
   </body>
 </html>
