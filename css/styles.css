@@ -1,3 +1,10 @@
+body {
+  background-color: #282828;
+  /*background-image: url("../img/bgimg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;*/
+  color: #FFFFFF;
+}
 .questions th {
     text-align: center;
 }
@@ -8,4 +15,7 @@
 .questions td {
   text-align: center;
   width: 60px;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #383838;
 }
