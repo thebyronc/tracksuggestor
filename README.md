@@ -22,7 +22,7 @@ Email Byron Chang at thebyronc@gmail.com
 Used GitHub, Atom, and Paint.net.
 
 ## GitHub Pages
-
-
+The following project is also available at (https://thebyronc.github.io/webportfolio/ "Byron's Webportfolio")
+The following project is also available at (https://thebyronc.github.io/tracksuggestor/ "Track Suggestor gh-pages")
 ### License
 No license for this. Free to use.
