@@ -1,9 +1,8 @@
 body {
-  background-color: #282828;
+
   /*background-image: url("../img/bgimg.png");
   background-size: 100%;
   background-repeat: no-repeat;*/
-  color: #FFFFFF;
 }
 .questions th {
     text-align: center;
@@ -16,6 +15,17 @@ body {
   text-align: center;
   width: 60px;
 }
-.table-hover > tbody > tr:hover {
-  background-color: #383838;
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+    margin: 0 3px;
+    float: left;
+    width: 75px;
+    height: 75px;
 }

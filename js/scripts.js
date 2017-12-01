@@ -19,7 +19,7 @@ $(document).ready(function() {
     } else if (combinedInput === 15) {
       $("#output").text("Hello " + nameInput + ", You seem to not seem to have a particular interest in either mobile development or desktop development. May we suggest the PHP/Drupal course from Epicodus.");
     } else {
-      console.log("else")
+      console.log("Reached end of branch, check for possible errors.")
     }
   });
 });
