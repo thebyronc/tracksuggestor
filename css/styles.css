@@ -1,0 +1,11 @@
+.questions th {
+    text-align: center;
+}
+.questions th:first-of-type {
+    width: 300px;
+    text-align: left;
+}
+.questions td {
+  text-align: center;
+  width: 60px;
+}
