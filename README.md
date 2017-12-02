@@ -23,6 +23,7 @@ Used GitHub, Atom, and Paint.net.
 
 ## GitHub Pages
 #### The following project is also available at https://thebyronc.github.io/webportfolio/
-#### https://thebyronc.github.io/tracksuggestor/
+#### Track Suggestor gh-pages https://thebyronc.github.io/tracksuggestor/
+
 ### License
 No license for this. Free to use.
